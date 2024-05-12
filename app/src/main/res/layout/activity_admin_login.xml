@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AdminLogin"
+    android:background="@drawable/ytu">
+
+    <EditText
+        android:id="@+id/adminMail"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Kullanıcı Emaili"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_white"/>
+
+    <EditText
+        android:id="@+id/adminPsw"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_white"/>
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Giriş Yap" />
+
+</LinearLayout>

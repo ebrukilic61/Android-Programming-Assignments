@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <Spinner
+        android:id="@+id/reportKonu"
+        android:layout_width="354dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="196dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="12dp"
+        android:text="Rapor nedeninizi seçiniz :"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/reportKonu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="364dp"
+        android:layout_height="347dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="29dp"
+        app:cardBackgroundColor="#D3D6F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportKonu"
+        app:layout_constraintVertical_bias="0.346">
+
+        <EditText
+            android:id="@+id/textViewCard"
+            android:layout_width="350dp"
+            android:layout_height="267dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="75dp"
+            android:background="@null"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:text="..."
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/karakterSayisi"
+            android:layout_width="67dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:text="Subject:"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/subjectText"
+            android:layout_width="295dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="65dp"
+            android:background="@null"
+            android:gravity="start"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:text="Metin:" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="2dp"
+        android:text="Şikayetinizi yazınız :"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportKonu"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/ekleButton"
+        android:layout_width="93dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="6dp"
+        android:text="Ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/dersKoduRep"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/reportKonu"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:text="Ders Kodu : "
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/dersKoduRep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="255dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:text="Eğer uygulamayla alakalı bir şikayetiniz varsa ders kodunu girmeyiniz!"
+        android:textColor="#DA1503"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ekleButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

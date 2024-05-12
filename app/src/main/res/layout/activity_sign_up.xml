@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/profilebkg"
+    tools:context=".SignupActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_edittext"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="İsim - Soyisim"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_studentNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:drawablePadding="8dp"
+                android:hint="Öğrenci Numarası"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:drawablePadding="8dp"
+                android:hint="Telefon Numarası"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/deptName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_school_24"
+                android:drawablePadding="8dp"
+                android:hint="Departman"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/degreeName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/degree_24"
+                android:drawablePadding="8dp"
+                android:hint="Derece"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_password2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Şifre Tekrar"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lavender"
+                android:text="Kaydol"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:text="Hesabınız var mı? Giriş yapın."
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

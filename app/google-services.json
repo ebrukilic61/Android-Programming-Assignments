@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "460919629181",
+    "project_id": "ders1-f22e5",
+    "storage_bucket": "ders1-f22e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460919629181:android:27d36a1739c36a81ef9814",
+        "android_client_info": {
+          "package_name": "com.example.ders1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjeqH5Y2JCaGjJuRjnRIFf4db76jM180M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

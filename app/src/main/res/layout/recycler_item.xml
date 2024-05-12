@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    tools:context=".CourseListActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/ucrop_crop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/baseline_border_color_24"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp">
+
+        <ImageView
+            android:id="@+id/idCourseImage"
+            android:layout_width="91dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/lesson" />
+
+        <TextView
+            android:id="@+id/dersAdiTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/idCourseImage"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dersKoduTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dersAdiTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/idCourseImage"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instructorNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dersKoduTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/idCourseImage"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/dersGunText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructorNameTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/idCourseImage"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/grupNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dersGunText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/idCourseImage"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="44dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/idCourseImage"
+            android:layout_marginTop="-1dp"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/bin_32"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/dersEkle"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/grupNo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/grupNo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="51dp"
+            android:background="@color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

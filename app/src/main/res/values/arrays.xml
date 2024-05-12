@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_technology" />
+    <string-array name="option_types">
+        <item>Radio Button</item>
+        <item>Edit Text</item>
+    </string-array>
+    <string-array name="reportKonusu">
+        <item>Uygulama Kaynaklı Sorun</item>
+        <item>Ders Kaynaklı Sorun</item>
+        <item>Kopya Bildirisi</item>
+        <item>Diger</item>
+    </string-array>
+</resources>

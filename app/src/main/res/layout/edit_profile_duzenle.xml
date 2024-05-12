@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/lavender"
+    tools:context=".EditProfileActivity">
+
+    <EditText
+        android:id="@+id/AEditNameSurname"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:drawablePadding="8dp"
+        android:hint="İsim Soyisim"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="485dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+
+        <ScrollView
+            android:layout_width="354dp"
+            android:layout_height="550dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="363dp"
+                android:layout_height="485dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <EditText
+                    android:id="@+id/AEditStudentNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_pin_24"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="40dp"
+                    android:hint="Öğrenci Numaranız"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/AEditEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Email adresiniz"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/AEditDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_school_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Okuduğunuz Bölüm"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/AEditDegree"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/degree_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Dereceniz"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/APhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Telefon numaranız"
+                    android:inputType="phone"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <Switch
+                    android:id="@+id/switchTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="telefon numaranı gizle"
+                    android:textColor="#919191" />
+
+                <EditText
+                    android:id="@+id/Asocial_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/linkedin_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Linkedin Hesabınız"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <Switch
+                    android:id="@+id/switchLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="linkedin hesabını gizle"
+                    android:textColor="#919191" />
+
+                <EditText
+                    android:id="@+id/Asocial_media2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/insta_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Instagram Hesabınız"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <Switch
+                    android:id="@+id/switchInsta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="instagram hesabını gizle"
+                    android:textColor="#919191" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/GuncelleBtn"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:text="Güncelle" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    tools:context=".CourseListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ogrNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/ogrEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ogrNameText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/ogrNumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ogrEmailText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/ogrNumText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="258dp"
+        android:text="CSV Dosyası Yükle" />
+
+    <TextView
+        android:id="@+id/txtSelectedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChooseFile"
+        android:layout_marginTop="16dp"
+        android:text="Seçilen Dosya: "
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yükle"
+        android:layout_below="@id/txtSelectedFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="125dp"
+        android:layout_height="103dp"
+        android:layout_above="@+id/btnChooseFile"
+        android:layout_alignEnd="@+id/btnChooseFile"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="27dp"
+        app:srcCompat="@drawable/csv_64" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="257dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-57dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="-76dp"
+        android:layout_marginBottom="30dp"
+        android:text="CSV Verileriyle Öğrenci Ekleme Ekranı"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_csvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-322dp"
+        android:text="The result will be displayed here."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
